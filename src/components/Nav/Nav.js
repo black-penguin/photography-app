@@ -3,14 +3,15 @@ import {Link} from "react-router-dom"
 
 import "./Nav.css"
 
-export default function Nav( { items } ) {
+export default function Nav()
+{
   return (
     <div id="Nav__container">
       <div>
-        <Link className="nav" to="#">
+        <Link className="nav" exact to="/home">
           <span>Home</span>
         </Link>
-        <Link className="nav" to="#">
+        <Link className="nav" to="/portfolio">
           <span>Portfolio</span>
         </Link>
         <Link className="nav" to="#">

@@ -5,6 +5,7 @@ import './css/index.css';
 import './css/styles.css';
 
 import Nav from './components/Nav/Nav';
+import router from './router';
 
 class App extends Component
 {
@@ -20,6 +21,7 @@ class App extends Component
           </div>
         </div>
         <Nav />
+        { router}
       </div>
     );
   }
