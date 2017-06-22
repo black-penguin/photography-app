@@ -25,36 +25,6 @@ body
   border-radius:5px;
 }
 
-div ul
-{
-  list-style-type: none;
-	/*position: fixed;*/
-  width:100%;
-  padding:10px;
-  font-size:32px;
-  background-color: silver;
-  display: flex;
-  justify-content: space-around;
-}
-
-ul li
-{
-
-  color:white;
-  border-left:.5vw;
-  border-right:.3vw;
-}
-
-a:link
-{
-  text-decoration:  none;
-}
-
-a:hover
-{
-  background-color: #4a4949;
-}
-
 .one
 {
   width: 80vw;

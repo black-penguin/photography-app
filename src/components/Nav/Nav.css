@@ -1,0 +1,33 @@
+.nav
+{
+  list-style-type: none;
+	/*position: fixed;*/
+  width:100%;
+  padding:10px;
+  font-size:32px;
+  background-color: silver;
+  justify-content: space-around;
+}
+
+.nav span
+{
+
+  color:white;
+  border-left:.5vw;
+  border-right:.3vw;
+}
+
+a:link
+{
+  text-decoration:  none;
+}
+
+a:hover
+{
+  background-color: #4a4949;
+}
+
+#Nav__container
+{
+  margin-top: 20px;
+}

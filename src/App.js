@@ -4,6 +4,8 @@ import './css/App.css';
 import './css/index.css';
 import './css/styles.css';
 
+import Nav from './components/Nav/Nav';
+
 class App extends Component
 {
   render()
@@ -17,13 +19,7 @@ class App extends Component
             <p>Tap to Call Me</p>
           </div>
         </div>
-        <div>
-          <ul>
-          <a href="./index.html"><li>Home</li></a>
-          <a href="./portfolio.html"><li>Portfolio</li></a>
-          <a href="./contact.html"><li>Contact</li></a>
-          </ul>
-        </div>
+        <Nav />
       </div>
     );
   }
