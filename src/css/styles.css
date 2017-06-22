@@ -1,0 +1,77 @@
+body
+{
+  background-color:#4a4949;
+}
+
+.tabs
+{
+  font-size:35px;
+  color:white;
+  padding-top: 15px;
+  height: 225px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+.contact
+{
+  padding:.5vh 3vw .5vh 3vw;
+  width: 34vw;
+  font-size:30px;
+  background-color:gray;
+  border-radius:5px;
+}
+
+div ul
+{
+  list-style-type: none;
+	/*position: fixed;*/
+  width:100%;
+  padding:10px;
+  font-size:32px;
+  background-color: silver;
+  display: flex;
+  justify-content: space-around;
+}
+
+ul li
+{
+
+  color:white;
+  border-left:.5vw;
+  border-right:.3vw;
+}
+
+a:link
+{
+  text-decoration:  none;
+}
+
+a:hover
+{
+  background-color: #4a4949;
+}
+
+.one
+{
+  width: 80vw;
+  margin-top: 15px;
+  margin-left:10vw;
+  margin-bottom: 35px;
+}
+
+.tile
+{
+  float: left;
+  width: 300px;
+  margin: 15px;
+  margin-left: 8vw;
+}
+
+.select
+{
+  position: absolute;
+}
