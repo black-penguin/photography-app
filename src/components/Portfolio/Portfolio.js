@@ -1,7 +1,9 @@
 import React, {Component} from "react";
-import Enlarge from "./Enlarge/Enlarge"
+import Enlarge from "./Enlarge/Enlarge";
+import Selector from "./Selector/Selector";
 import "./Portfolio.css";
 import rose from "./jpg/rose.jpg";
+import water_fall from "./jpg/water_fall.jpg"
 
 
 
@@ -32,19 +34,11 @@ export default class Portfolio extends Component
   }
 
   render()
-  // onClick={<Enlarge picture={rose}} style={{"display", "block"}} />
   {
-    console.log(this.state.display);
     return (
       <div>
-        <div>
-
-          <button className="enl"
-            onClick={this.showModal}>
-            <img className="tile" src={rose} />
-          </button>
-          <Enlarge picture={rose} display={this.state.display} close={this.closeModal}/>
-        </div>
+        <Selector picture={rose} open={this.showModal}/>
+        <Enlarge picture={rose} display={this.state.display} close={this.closeModal}/>
       </div>
     );
   }
