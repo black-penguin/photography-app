@@ -1,60 +1,51 @@
-import React from "react";
-import {Link} from "react-router-dom"
+import React, {Component} from "react";
+import Enlarge from "./Enlarge/Enlarge"
+import "./Portfolio.css";
+import rose from "./jpg/rose.jpg";
 
-import "./Portfolio.css"
 
-export default function ()
+
+
+export default class Portfolio extends Component
 {
-  return (
-    <div>
-      <section>
+  constructor()
+  {
+    super();
+
+    this.state=
+    {
+      display:"none"
+    }
+
+    this.showModal=this.showModal.bind(this);
+    this.closeModal=this.closeModal.bind(this);
+  }
+
+  showModal()
+  {
+    this.setState({display:"flex"})
+  }
+
+  closeModal()
+  {
+    this.setState({display:"none"})
+  }
+
+  render()
+  // onClick={<Enlarge picture={rose}} style={{"display", "block"}} />
+  {
+    console.log(this.state.display);
+    return (
+      <div>
         <div>
-          <button onclick="document.getElementById('id03').style.display='block'">
-            <img  class="tile" src="./jpg/20150711_200453-1.jpg" alt="mountain" />
-          </button>
-          <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
-            <img  class="tile" src="./jpg/one.jpg" alt="water fall"/>
-          </button>
 
-          <button onclick="document.getElementById('id02').style.display='block'">
-            <img  class="tile" src="./jpg/rose.jpg" alt="rose" />
+          <button className="enl"
+            onClick={this.showModal}>
+            <img className="tile" src={rose} />
           </button>
-        </div>
-
-      </section>
-
-      <div id="id01" class="modal">
-        <div class="modal-content animate" action="/action_page.php">
-          <div class="imgcontainer">
-            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-          </div>
-          <div class="container">
-            <img src="./jpg/one.jpg" alt="water fall"/>
-          </div>
+          <Enlarge picture={rose} display={this.state.display} close={this.closeModal}/>
         </div>
       </div>
-
-      <div id="id02" class="modal">
-        <div class="modal-content animate" action="/action_page.php">
-          <div class="imgcontainer">
-            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
-          </div>
-          <div class="container">
-            <img src="./jpg/rose.jpg" alt="rose" />
-          </div>
-        </div>
-      </div>
-
-      <div id="id03" class="modal">
-        <div class="modal-content animate" action="/action_page.php">
-          <div class="imgcontainer">
-            <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
-          </div>
-          <div class="container">
-            <img src="./jpg/20150711_200453-1.jpg" alt="mountain" />
-          </div>
-        </div>
-      </div>
-    </div>
-  );
+    );
+  }
 }

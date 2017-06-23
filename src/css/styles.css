@@ -25,22 +25,6 @@ body
   border-radius:5px;
 }
 
-.one
-{
-  width: 80vw;
-  margin-top: 15px;
-  margin-left:10vw;
-  margin-bottom: 35px;
-}
-
-.tile
-{
-  float: left;
-  width: 300px;
-  margin: 15px;
-  margin-left: 8vw;
-}
-
 .select
 {
   position: absolute;

@@ -21,7 +21,7 @@ class App extends Component
           </div>
         </div>
         <Nav />
-        { router}
+        { router }
       </div>
     );
   }
