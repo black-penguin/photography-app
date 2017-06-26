@@ -14,9 +14,6 @@ export default class Portfolio extends Component
     super();
     this.state={rose:'',water_fall:'', IMG_6835:''};
     this.view=[];
-    // {
-    //   display:"none"
-    // }
     this.showModal=this.showModal.bind(this);
     this.closeModal=this.closeModal.bind(this);
 
@@ -24,8 +21,6 @@ export default class Portfolio extends Component
 
   showModal(image)
   {
-    // this.setstate({[image]:'flex'})
-    //this.state="flex";
     this.setState(()=>{
       var img = {};
       img[image]='flex';
@@ -45,9 +40,6 @@ export default class Portfolio extends Component
 
   render()
   {
-    // <Selector alt={img}  picture={{img}.img} open={this.showModal} />
-    // <Enlarge alt={img} picture={img} display={this.views.display} close={this.closeModal}/>
-    console.log(arr);
     const pic = arr.map((img, i) =>
     {
       return(

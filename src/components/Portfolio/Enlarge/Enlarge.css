@@ -17,13 +17,18 @@
 /* Modal Content/Box */
 .modal-content
 {
-    margin: 7% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-    width: 88%; /* Could be more or less, depending on screen size */
+    margin: 5% auto 25% auto;
+    width: 88%;
 }
 
 .container
 {
   padding-top: 5vh;
+}
+
+.imgcontainer
+{
+  margin-bottom: 10%;
 }
 
 .animate
@@ -47,4 +52,13 @@ img
   width: 100%;
   color: white;
   cursor: pointer;
+}
+
+@media (min-width: 750px)
+{
+  .modal-content
+  {
+    margin: 3% auto 15% auto;
+    width:70%;
+  }
 }
