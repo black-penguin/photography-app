@@ -49,7 +49,7 @@ export default class Portfolio extends Component
   {
     // <Selector alt={img}  picture={{img}.img} open={this.showModal} />
     // <Enlarge alt={img} picture={img} display={this.views.display} close={this.closeModal}/>
-
+    console.log(arr);
     const pic = arr.map((img, i) =>
     {
       return(
