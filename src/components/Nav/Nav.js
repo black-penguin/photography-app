@@ -8,7 +8,7 @@ export default function Nav()
   return (
     <div id="Nav__container">
       <div>
-        <Link className="nav" to="/home">
+        <Link className="nav" to="/">
           <span>Home</span>
         </Link>
         <Link className="nav" to="/portfolio">
