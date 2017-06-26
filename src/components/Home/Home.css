@@ -1,0 +1,12 @@
+.home
+{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+h1
+{
+  color: white;
+  font-size: 30px;
+}

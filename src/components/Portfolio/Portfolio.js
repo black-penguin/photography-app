@@ -3,8 +3,6 @@ import Enlarge from "./Enlarge/Enlarge";
 import Selector from "./Selector/Selector";
 import "./Portfolio.css";
 import arr from "./Pictures";
-import rose from "./jpg/rose.jpg";
-import water_fall from "./jpg/water_fall.jpg"
 
 
 export default class Portfolio extends Component

@@ -47,3 +47,11 @@ input[type=submit]:hover
   height:200px;
   margin-top: 10px;
 }
+
+@media(min-width: 750px)
+{
+    .contact
+    {
+      display: none;
+    }
+}

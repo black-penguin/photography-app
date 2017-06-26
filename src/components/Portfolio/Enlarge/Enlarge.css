@@ -26,25 +26,6 @@
   padding-top: 5vh;
 }
 
-/* The Close Button (x) */
-.close
-{
-    position: absolute;
-    right: 25px;
-    top: 2px;
-    color: white;
-    font-size: 60px;
-    font-weight: bold;
-}
-
-/*.close:hover,
-.close:focus
-{
-    color: red;
-    cursor: pointer;
-}*/
-
-/* Add Zoom Animation */
 .animate
 {
     -webkit-animation: animatezoom 0.6s;
