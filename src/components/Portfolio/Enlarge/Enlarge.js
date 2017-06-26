@@ -1,21 +1,17 @@
-import React, {Component} from "react";
+import React from "react";
 import "./Enlarge.css";
-
-
 
 const Enlarge=(props) =>
 {
-//   <span className="close" title="Close Modal" onClick={props.close}>&times;</span>
-//  </div>
-//  <div className="container">
-//   <img src={props.picture}/>
-
     return (
       <div className="modal" style={{"display": `${props.display}`}}>
+      {console.log("bug1", props.display)}
         <div className="modal-content animate" action="/action_page.php">
+        {console.log("bug2")}
           <div className="imgcontainer">
-          <span onClick={props.close}>
-            <img src={props.picture} />
+          <span onClick={() => props.close(props.picture)}>
+            <img src={props.picture} alt={props.alt}/>
+            {console.log("bug3")}
           </span>
           </div>
         </div>
