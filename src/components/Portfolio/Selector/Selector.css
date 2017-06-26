@@ -11,14 +11,11 @@
 {
     background-color: inherit;
     color: Black;
-    /*padding: 7px 7px 7px 7px;*/
-    /*margin: 8px 0;*/
     border: none;
     cursor: pointer;
-    /*width: 85%;*/
 }
 
-.enl:hover
+img:hover
 {
-    opacity: 0.6;
+    opacity: 0.8;
 }

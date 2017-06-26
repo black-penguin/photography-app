@@ -18,9 +18,8 @@ body
 
 .contact
 {
-  padding:.5vh 3vw .5vh 3vw;
-  width: 34vw;
-  font-size:30px;
+  padding:1.5vh 3vw 1.5vh 4vw;
+  font-size:28px;
   background-color:gray;
   border-radius:5px;
 }
@@ -28,4 +27,28 @@ body
 .select
 {
   position: absolute;
+}
+
+a:link
+{
+  text-decoration:  none;
+  color: inherit;
+}
+
+a:hover
+{
+  background-color: #4a4949;
+}
+
+@media(min-width: 750px)
+{
+  .contact
+  {
+    display: none;
+  }
+
+  .tabs
+  {
+    height: 140px;
+  }
 }

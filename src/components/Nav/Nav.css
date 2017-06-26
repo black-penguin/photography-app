@@ -2,7 +2,7 @@
 {
   list-style-type: none;
 	/*position: fixed;*/
-  width:100%;
+
   padding:10px;
   font-size:32px;
   background-color: silver;
@@ -29,6 +29,9 @@ a:hover
 
 #Nav__container
 {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 5px;
+  width:100vw;
+  background-color: silver;
 }

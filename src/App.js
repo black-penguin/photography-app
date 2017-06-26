@@ -17,7 +17,9 @@ class App extends Component
           <h1>Austin Wheelwright</h1>
           <h2 className="title">Photographer</h2>
           <div className="contact">
-            <p>Tap to Call Me</p>
+            <a href="tel:385-225-5273">
+              <span>Call Me</span>
+            </a>
           </div>
         </div>
         <Nav />
